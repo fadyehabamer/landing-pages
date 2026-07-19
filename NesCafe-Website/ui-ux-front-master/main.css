@@ -1,0 +1,75 @@
+body
+{
+    background-color: #A60303;
+}
+
+.n-content
+{
+  text-align: left;    
+}
+.n-content p
+{
+    color: #FFFFFF;
+    font-size: 30px;
+}
+.solgan-content h1
+{
+  color: #FFFFFF;
+  font-weight: bold;
+  font-family: 'Bigshot One', cursive;
+
+}
+.solgan-content .arabic
+{
+  font-family: 'Changa', sans-serif;
+
+}
+.d-content
+{
+  color: #FFFFFF;
+  font-weight: bold;
+  font-family: 'Bigshot One', cursive;
+}
+.d-name h5
+{
+  color: #FFFFFF;
+  font-weight: bold;
+  font-family: 'Bigshot One', cursive;
+  font-size:36 ;
+} 
+@media (max-width:800px)
+{
+  .d-name h5
+{
+  color: #FFFFFF;
+
+  font-size:16px ;
+  justify-content: space-between;
+} 
+}
+.solgan
+{
+  position: relative;
+}
+.img1
+{
+  position: absolute;
+  left: 0;
+  top:-100px;
+  z-index: -1;
+}
+
+
+.parent
+{
+  position: relative;
+  
+}
+.img2
+{
+  position: absolute;
+  right: 0;
+  top: -300px;
+  z-index: -1;
+ 
+}

@@ -2,7 +2,7 @@
 
 > Single-page brand & product landing pages
 
-**21 demos** · 🔗 **[Live gallery](https://fadyehabamer.github.io/landing-pages/)** — every demo is deployed to GitHub Pages.
+**22 demos** · 🔗 **[Live gallery](https://fadyehabamer.github.io/landing-pages/)** — every demo is deployed to GitHub Pages.
 
 | Demo | Description | Preview |
 |------|-------------|---------|
@@ -24,6 +24,7 @@
 | [`Pizzero-LandingPage`](./Pizzero-LandingPage/) | Responsive pizza restaurant page with menu, testimonials and order form | [🔗 Live](https://fadyehabamer.github.io/landing-pages/Pizzero-LandingPage/) |
 | [`Ramadan-Offers-Landing`](./Ramadan-Offers-Landing/) | Arabic RTL Ramadan offers page with a configurable countdown, offers grid and FAQ accordion | [🔗 Live](https://fadyehabamer.github.io/landing-pages/Ramadan-Offers-Landing/) |
 | [`SEND-LandingPage`](./SEND-LandingPage/) | Minimal messaging-service hero page built in a 10-minute challenge | [🔗 Live](https://fadyehabamer.github.io/landing-pages/SEND-LandingPage/) |
+| [`Salla-Store-Landing`](./Salla-Store-Landing/) | Arabic-first landing page for a fictional coffee store: highlights, best sellers, reviews and CTA | [🔗 Live](https://fadyehabamer.github.io/landing-pages/Salla-Store-Landing/) |
 | [`SquideGame-LandingPage`](./SquideGame-LandingPage/) | Squid Game fan page with trailer popup and Swiper review slider | [🔗 Live](https://fadyehabamer.github.io/landing-pages/SquideGame-LandingPage/) |
 | [`Starbucks-LandingPage`](./Starbucks-LandingPage/) | Starbucks hero with a drink picker that swaps the cup and background colour | [🔗 Live](https://fadyehabamer.github.io/landing-pages/Starbucks-LandingPage/) |
 | [`Video-LandingPage`](./Video-LandingPage/) | Full-screen background video landing page | [🔗 Live](https://fadyehabamer.github.io/landing-pages/Video-LandingPage/) |

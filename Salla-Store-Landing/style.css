@@ -332,3 +332,84 @@ a {
 .footer-inner p {
   margin: 0;
 }
+
+@media (max-width: 960px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-grid,
+  .review-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-art {
+    width: 220px;
+  }
+}
+
+@media (max-width: 720px) {
+  .header-inner {
+    flex-wrap: wrap;
+    padding-block: 10px;
+  }
+
+  .site-nav {
+    width: 100%;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    gap: 8px 16px;
+  }
+
+  .hero {
+    padding-block: 40px 56px;
+  }
+
+  .hero-inner {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-art {
+    width: 160px;
+  }
+
+  .features,
+  .products,
+  .reviews {
+    padding-block: 48px;
+  }
+
+  .features h2,
+  .products h2,
+  .reviews h2,
+  .cta h2 {
+    font-size: 1.6rem;
+  }
+
+  .feature-grid,
+  .product-grid,
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

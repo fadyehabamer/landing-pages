@@ -314,6 +314,10 @@ a {
 }
 
 .accordion-trigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
   width: 100%;
   padding: 18px 4px;
   border: 0;
@@ -324,6 +328,25 @@ a {
   font-weight: 700;
   text-align: start;
   cursor: pointer;
+}
+
+.accordion-trigger[aria-expanded]::after {
+  content: "+";
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--cream);
+  color: var(--navy);
+  font-size: 1.2rem;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.accordion-trigger[aria-expanded="true"]::after {
+  transform: rotate(45deg);
 }
 
 .accordion-panel {

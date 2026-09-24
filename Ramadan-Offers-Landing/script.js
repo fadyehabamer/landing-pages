@@ -51,3 +51,27 @@ function startCountdown(section) {
 
 const countdown = document.querySelector(".countdown[data-deadline]");
 if (countdown) startCountdown(countdown);
+
+document.querySelectorAll(".accordion-trigger").forEach((trigger) => {
+  const panel = document.getElementById(trigger.getAttribute("aria-controls"));
+  if (!panel) return;
+
+  trigger.setAttribute("aria-expanded", "false");
+  panel.hidden = true;
+
+  trigger.addEventListener("click", () => {
+    const open = trigger.getAttribute("aria-expanded") === "true";
+    trigger.setAttribute("aria-expanded", String(!open));
+    panel.hidden = open;
+  });
+});
+
+const cartCount = document.querySelector(".cart-count");
+let items = 0;
+
+document.querySelectorAll(".btn-add").forEach((button) => {
+  button.addEventListener("click", () => {
+    items += 1;
+    if (cartCount) cartCount.textContent = String(items);
+  });
+});

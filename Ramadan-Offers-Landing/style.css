@@ -17,6 +17,10 @@
   --radius: 14px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Tahoma, "Segoe UI", "Geeza Pro", "Noto Sans Arabic", sans-serif;
@@ -59,6 +63,48 @@ a {
   clip: rect(0 0 0 0);
   white-space: nowrap;
   border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: 8px;
+  inset-inline-start: 8px;
+  z-index: 20;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: var(--gold);
+  color: var(--navy);
+  font-weight: 700;
+  transform: translateY(-150%);
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+:focus-visible {
+  outline: 3px solid var(--gold-dark);
+  outline-offset: 3px;
+}
+
+.site-header :focus-visible,
+.hero :focus-visible,
+.countdown :focus-visible,
+.site-footer :focus-visible {
+  outline-color: var(--gold);
+}
+
+.countdown :focus-visible {
+  outline-color: var(--navy);
+}
+
+main:focus {
+  outline: none;
+}
+
+section[id],
+footer[id] {
+  scroll-margin-top: 80px;
 }
 
 .btn {
@@ -169,6 +215,17 @@ a {
   width: 260px;
   height: auto;
   flex: none;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .countdown {
@@ -460,5 +517,19 @@ a {
   .footer-links {
     flex-wrap: wrap;
     gap: 12px 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero-art {
+    animation: none;
+  }
+
+  .accordion-trigger[aria-expanded]::after {
+    transition: none;
   }
 }
